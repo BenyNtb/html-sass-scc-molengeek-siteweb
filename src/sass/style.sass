@@ -1,6 +1,6 @@
 header
     .mauve
-        backgroundcolor: #800808
+        background-color: purple
         padding: 5px
         display: flex
         justify-content: center
@@ -12,24 +12,24 @@ header
             position: absolute
             top: 0
             left: 10px
-            form 
-                label
-                    color: #ffffff
-                input
-                    padding: 10px
-                    border: 0
-                    border-radius: 10px
-                button
-                    background-color: #00ff4c    
-                    border: 0
-                    border-radius: 5px
-                    color: #ffffff
-                    padding: 10px
-                    text-transform: uppercase
+            
+        label
+                color: white
+        input
+            padding: 10px
+            border: 0
+            border-radius: 10px
+        button
+            background-color: lime 
+            border: 0
+            border-radius: 5px
+            color: white
+            padding: 10px
+            text-transform: uppercase
     nav
         display: flex
         align-items: center
-        border-bottom: 1px solid #8f8e8e
+        border-bottom: 1px solid grey
         .nav-logo, .coworking
             flex: 1
             display: flex
@@ -41,8 +41,8 @@ header
         .navigation
             flex: 4
             padding: 50px 20px
-            border-left: 1px solid #8f8e8e
-            border-right: 1px solid #8f8e8e
+            border-left: 1px solid #616161
+            border-right: 1px solid #616161
             ul
                 padding: 0
                 display: flex
@@ -89,12 +89,46 @@ section
         left: calc( 50% - 40% )
         height: 3px
         width: 80px
-        background-color: 
-    ul li
+        background-color: #550255
+    ul 
+        li
         margin: 8px 0
         li::marker
             color: #550255
 section
     h2
         font-size: 35px
-
+footer
+    background-color: #000000
+    .reseaux
+        display: flex
+        justify-content: center
+        border-bottom: 1px solid #616161
+        ul
+            display: flex
+            li
+                list-style: none
+                margin: 0 18px
+                padding: 50px 
+            a
+                color: #ffffff
+                text-decoration: none
+                text-transform: uppercase
+                font-size: 15px
+                display: flex
+                justify-content: center
+                align-items: center
+            i
+                border-radius: 50%
+                border: 2px solid #ffffff
+                padding: 10px
+                margin-right: 10px
+    .copy
+        img
+        height: 80px
+        margin-bottom: 10px
+        padding: 50px
+        p
+            padding: 30px
+            font-size: 10px
+            color: #616161
