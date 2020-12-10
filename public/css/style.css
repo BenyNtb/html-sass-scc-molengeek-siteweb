@@ -1,89 +1,17 @@
-header .mauve {
-  backgroundcolor: #800808;
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: relative;
-}
-header .mauve img {
-  height: 50px;
-  width: auto;
-  position: absolute;
-  top: 0;
-  left: 10px;
-}
-header .mauve img form label {
-  color: #ffffff;
-}
-header .mauve img form input {
-  padding: 10px;
-  border: 0;
-  border-radius: 10px;
-}
-header .mauve img form button {
-  background-color: #00ff4c;
-  border: 0;
-  border-radius: 5px;
-  color: #ffffff;
-  padding: 10px;
-  text-transform: uppercase;
-}
-header nav {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #8f8e8e;
-}
-header nav .nav-logo, header nav .coworking {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header nav .nav-logo img, header nav .coworking img {
-  width: 150px;
-  height: auto;
-}
-header nav .navigation {
-  flex: 4;
-  padding: 50px 20px;
-  border-left: 1px solid #8f8e8e;
-  border-right: 1px solid #8f8e8e;
-}
-header nav .navigation ul {
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-header nav .navigation ul li {
-  list-style: none;
-  text-transform: uppercase;
-}
-header nav .navigation ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #000000;
-  max-width: max-content;
-  position: relative;
-}
-header nav .navigation ul li a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  background-color: #000;
-  height: 2px;
-  transition: 1s;
-  width: 100%;
-  transform: scaleX(0);
-}
-header nav .navigation ul li a:hover::before {
-  transform: scaleX(1);
-}
-header nav a {
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
-}
+/* Error: Expected expression.
+ *    ,
+ * 92 |         background-color: 
+ *    |                           ^
+ *    '
+ *   src\sass\style.sass 92:27  root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 92 \2502          background-color: \d\a    \2502                            ^\a    \2575 \a   src\\sass\\style.sass 92:27  root stylesheet";
+}
